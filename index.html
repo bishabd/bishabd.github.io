@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dBishab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="TITLE.JPG">
+    <style>
+        body {
+            font-family: 'Fira Sans Condensed', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(0deg, #1a1a1a, #a6a6a6); /* Gradient from lighter to darker */
+        }
+
+        .business-card {
+            width: 350px;
+            height: auto;
+            background: #e0e0e0; /* Darker off-white background */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #ff6f61;
+            margin-right: 15px;
+        }
+
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff6f61;
+        }
+
+        .designation {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .contact div {
+            text-align: center;
+        }
+
+        .contact div span {
+            display: block;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .contact div a {
+            text-decoration: none;
+            color: #ff6f61;
+            font-weight: bold;
+        }
+
+        .contact div a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #ff6f61;
+            font-size: 1.2em;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-icons a:hover {
+            color: #ff4040;
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <div class="header">
+            <img src="IMG_0004.JPG" alt="Image that denotes nothing" class="profile-pic">
+            <div>
+                <div class="name">Bishab "dBishab" Dahal</div>
+                <div class="designation">Senior Aerodynamicist</div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div>
+                <span>Email</span>
+                <a href="mailto:admin@bishab.com.np">admin@bishab.com.np</a>
+            </div>
+            <div>
+                <span>Phone</span>
+                <a href="tel:+9862230146">+9862230146</a>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/its_bishab" target="_blank" title="Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+            </a>
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+            </a>
+            <a href="https://wa.me/9862230146" target="_blank" title="WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

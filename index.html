@@ -7,20 +7,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="TITLE.JPG">
     <style>
-        body {
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
             font-family: 'Fira Sans Condensed', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100%;
+            width: 100%;
             margin: 0;
-            background: linear-gradient(0deg, #1a1a1a, #a6a6a6); /* Gradient from lighter to darker */
+            background: linear-gradient(0deg, #1a1a1a, #a6a6a6);
+            overflow: hidden; /* Prevent scrolling */
         }
 
         .business-card {
+            max-width: 90%; /* Makes it responsive */
+            max-height: 90%;
             width: 350px;
-            height: auto;
-            background: #e0e0e0; /* Darker off-white background */
+            background: #e0e0e0;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             display: flex;
@@ -101,12 +110,27 @@
         .social-icons a:hover {
             color: #ff4040;
         }
+
+        @media (max-width: 400px) {
+            .business-card {
+                padding: 15px;
+            }
+
+            .name {
+                font-size: 1.2em;
+            }
+
+            .profile-pic {
+                width: 50px;
+                height: 50px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="business-card">
         <div class="header">
-            <img src="IMG_ME.JPG" alt="Image that denotes nothing" class="profile-pic">
+            <img src="IMG_0004.JPG" alt="Image that denotes nothing" class="profile-pic">
             <div>
                 <div class="name">Bishab "dBishab" Dahal</div>
                 <div class="designation">Senior Aerodynamicist</div>
